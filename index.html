@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+
+			<meta charset="utf-8">
+			<meta name="viewport" content="width">
+
+			<!-- bootstrap link -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+			<!-- css main theme -->
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<title>Car Export</title>
+		</head>
+
+		<body>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 heading">
+						<h1>LES VOITURES AMERICAINES ÇA SE PASSE CHEZ SYLC EXPORT</h1>
+					</div>
+				</div>	
+
+				<!-- first cars img section -->
+				<div class="row first-car">
+					<div class="col-md-3">
+							<img src="img/car-one.png" alt="Blue car image">
+							<h4 style="text-align: center;">Pony</h4>
+						</div>
+						<div class="col-md-3">
+							<img src="img/car-two.png" alt="Blue car image">
+							<h4 style="text-align: center;">Chevrolet</h4>
+						</div>
+						<div class="col-md-3">
+							<img src="img/car-three.png" alt="Blue car image">
+							<h4 style="text-align: center;">Bristol</h4>
+						</div>
+						<div class="col-md-3">
+							<img src="img/car-four.png" alt="Blue car image">
+							<h4 style="text-align: center;">Ferrari</h4>
+						</div>
+				</div>
+				
+				<h3 class="more" style="text-align: center;">View More</h3>
+
+				
+
+
+				<!-- second cars img section -->
+				<div class="row second-car">
+					<div class="col-md-3">
+						<img src="img/car-three.png" alt="Blue car image">
+						<h4 style="text-align: center;">Bristol</h4>
+					</div>
+					<div class="col-md-3">
+						<img src="img/car-four.png" alt="Blue car image">
+						<h4 style="text-align: center;">Ferrari</h4>
+					</div>
+					<div class="col-md-3">
+						<img src="img/car-two.png" alt="Blue car image">
+						<h4 style="text-align: center;">Chevrolet</h4>
+					</div>
+					<div class="col-md-3">
+						<img src="img/car-one.png" alt="Blue car image">
+						<h4 style="text-align: center;">Pony</h4>
+					</div>		
+				</div>
+
+				<h3 class="less" style="text-align: center;">View Less</h3>
+				
+			</div>
+
+
+
+			<!-- jq library file -->	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<!-- bootstrap link -->
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+			<script type="text/javascript">
+
+				$(".second-car").hide();
+				$(".less").hide();
+
+				$(".more").click(function(){
+					$(".second-car").show();
+					$(".more").hide();
+					$(".less").show();
+				});
+
+				$(".less").click(function(){
+					$(".second-car").hide();
+					$(".more").show();
+					$(".less").hide();
+				});
+				
+			</script>
+
+		</body>
+	</html>
